@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: Task1.0_Who'sThatBird
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: Wait! I think I heard a pretty cool bird!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: They're going "CAW CAW!"
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: They sound like they have a sore throat.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Maybe we should get them some honey sometime...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: I think I know who they are, but what do you think?
+    _characterRelations: []
+    _responses:
+    - _text: Crow
+      _dialogueBranch: {fileID: 11400000, guid: d22cff8f349ef784fa19a6d17f46f54a, type: 2}
+    - _text: Blue Jay
+      _dialogueBranch: {fileID: 11400000, guid: e6713a24ae97d7b44953e40f6762f649, type: 2}
+    - _text: Catbird
+      _dialogueBranch: {fileID: 11400000, guid: 535fca28c4dd8094081004750b0870db, type: 2}
+  _activeQuest: {fileID: 0}

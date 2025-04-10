@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: AlphaTutorial
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: Use the buttons on the left and right of the screen to turn and the button
+      in the bottom middle to move forward.
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: The buttons to the left of the move button are your inventory.
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: When you pick up an item, you can hold it by pressing the slot it is in.
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: Pressing 'ESC' on the keyboard will pause the game and 'BACKSPACE' will
+      reset the scene.
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: Explore the woods, feed acorns to squirrels, and play games with Eliot!
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: Let's go explore!
+    _characterRelations: []
+    _responses: []

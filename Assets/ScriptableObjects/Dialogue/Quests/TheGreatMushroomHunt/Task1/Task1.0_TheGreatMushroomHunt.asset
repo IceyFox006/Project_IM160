@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: Task1.0_TheGreatMushroomHunt
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: Woah! You found one!
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: It looks... kinda like a sponge? I don't know how well that would taste.
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: Do you think I can eat it?
+    _characterRelations: []
+    _responses:
+    - _text: Yes
+      _dialogueBranch: {fileID: 11400000, guid: 3e683f0b630de664ebdecff15f40eef2, type: 2}
+    - _text: No
+      _dialogueBranch: {fileID: 11400000, guid: e31013be4d32ec84491e9cb28c80e60e, type: 2}

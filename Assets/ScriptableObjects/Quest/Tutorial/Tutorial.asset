@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6893785e60b7b0d409a26b3616488450, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  _name: Explore The Woods!
+  _description: 
+  _tasks:
+  - {fileID: 11400000, guid: f3bf20e3467091b4a9759451761c55dd, type: 2}
+  - {fileID: 11400000, guid: d979f69f04e45ea48a023d99ae00a99e, type: 2}
+  - {fileID: 11400000, guid: 3aff1feb5df21b648a94293308c8edfa, type: 2}
+  - {fileID: 11400000, guid: c9bfbc536b5602e4d95832492ed9e0c9, type: 2}
+  - {fileID: 11400000, guid: 04e9401ec4ca3814298c312857854b61, type: 2}
+  _introDialgoue: {fileID: 11400000, guid: 40af8ae32e46575498422fe77bdcfd74, type: 2}
+  _outroDialgoue: {fileID: 11400000, guid: 040af90f21854d14181dd98f4f8fbf7c, type: 2}

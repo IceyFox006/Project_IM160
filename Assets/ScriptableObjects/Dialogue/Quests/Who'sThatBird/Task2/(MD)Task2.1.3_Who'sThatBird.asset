@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: (MD)Task2.1.3_Who'sThatBird
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: They had to be an owl! They were saying "whoooo! whoooooo!"
+    _characterRelations:
+    - _character: {fileID: 11400000, guid: 02d4e2525bb272443b0a0a4a4f89d865, type: 2}
+      _relationshipChangeValue: 1
+    - _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
+      _relationshipChangeValue: 1
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: I wi- oh I see them!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: You missed them...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: You were right though, they were a mourning dove...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Many people think they're morning doves, like when the sun comes up because
+      that's when you hear them the best.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: But they're name has a "u" in it, like they're sad and they're crying!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I guessed too fast on that one. If I thought through it a bit more, I
+      bet I could have gotten it...
+    _characterRelations: []
+    _responses: []
+  _activeQuest: {fileID: 0}

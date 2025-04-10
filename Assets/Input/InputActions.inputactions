@@ -1,0 +1,54 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "Overworld",
+            "id": "2b3e45c0-c767-411c-8b8c-6d2598e02727",
+            "actions": [
+                {
+                    "name": "QUIT",
+                    "type": "Button",
+                    "id": "e96f1bb7-a9d7-4be1-8853-c2f091e4b7cf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RESET",
+                    "type": "Button",
+                    "id": "75d94711-d52d-419c-ba07-95d5cce346b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "00e26526-5032-44f3-b454-c671304acf02",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QUIT",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b6c21b9-5300-470c-ac71-e0dfabcf1067",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RESET",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

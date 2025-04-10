@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e3032daabaa1042bc853446e604658, type: 3}
+  m_Name: SquirrelEnter
+  m_EditorClassIdentifier: 
+  _description: 
+  _prerequisites:
+  - {fileID: 11400000, guid: 3aff1feb5df21b648a94293308c8edfa, type: 2}
+  _dialogue: {fileID: 11400000, guid: 003ff740e0da8e04b949078046be6faf, type: 2}
+  _repeatDialogue: {fileID: 0}
+  _unactiveDialogue: {fileID: 0}

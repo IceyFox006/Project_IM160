@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6893785e60b7b0d409a26b3616488450, type: 3}
+  m_Name: Who'sThatBird
+  m_EditorClassIdentifier: 
+  _name: Who's That Bird?!
+  _description: Identify the call of 3 different birds in The Woods.
+  _tasks:
+  - {fileID: 11400000, guid: 9d235ce8b68751040baabcb578eaa7d1, type: 2}
+  - {fileID: 11400000, guid: 875dc4bada4f4fb48bead35a4e4433bc, type: 2}
+  - {fileID: 11400000, guid: 6327934ebdae5cc4e989612ebb189587, type: 2}
+  _introDialgoue: {fileID: 11400000, guid: 617e39ff4d4dddf429524702611e4eab, type: 2}
+  _outroDialgoue: {fileID: 11400000, guid: 9abf87da4e5bb724da10bd0dca18bf1a, type: 2}

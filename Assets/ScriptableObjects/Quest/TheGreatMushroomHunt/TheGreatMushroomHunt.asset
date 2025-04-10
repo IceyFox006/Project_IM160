@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6893785e60b7b0d409a26b3616488450, type: 3}
+  m_Name: TheGreatMushroomHunt
+  m_EditorClassIdentifier: 
+  _name: The Great Mushroom Hunt
+  _description: Collect 3 mushrooms and determine if they are edible.
+  _tasks:
+  - {fileID: 11400000, guid: dad9df3a4a339a74a87aad7010cb3ebb, type: 2}
+  - {fileID: 11400000, guid: c3b886c4f2c73ac43992ad3178078359, type: 2}
+  - {fileID: 11400000, guid: eb1e6e3ba30ef0443b75237ec166cce8, type: 2}
+  _introDialgoue: {fileID: 11400000, guid: c8a33a19f76c3a64d9e7722f0cf58a87, type: 2}
+  _outroDialgoue: {fileID: 11400000, guid: 15a920ebac6abb14096e05c124e0dbdf, type: 2}

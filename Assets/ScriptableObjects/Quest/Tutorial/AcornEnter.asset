@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e3032daabaa1042bc853446e604658, type: 3}
+  m_Name: AcornEnter
+  m_EditorClassIdentifier: 
+  _description: 
+  _prerequisites:
+  - {fileID: 11400000, guid: f3bf20e3467091b4a9759451761c55dd, type: 2}
+  _dialogue: {fileID: 11400000, guid: 2a2f5a528bef8c5429d039635ff6f8fb, type: 2}
+  _repeatDialogue: {fileID: 0}
+  _unactiveDialogue: {fileID: 0}

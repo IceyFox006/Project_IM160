@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: Task2.0_Who'sThatBird
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: Shhhhh! I think I heard something.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: They sound like they're looking for someone.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: '"WhooooO whoo whoo whoo."'
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: They must be really sad...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: I hope they find whoever they're looking for.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: Who do you think they are?
+    _characterRelations: []
+    _responses:
+    - _text: Owl
+      _dialogueBranch: {fileID: 11400000, guid: d7267a166f715b9469c089a74bc8d3e4, type: 2}
+    - _text: Chickadee
+      _dialogueBranch: {fileID: 11400000, guid: a8fcd738b0642d844b3751ab64ef77f0, type: 2}
+    - _text: Mourning Dove
+      _dialogueBranch: {fileID: 11400000, guid: 10b763fa25a43174597957200eb8728e, type: 2}
+  _activeQuest: {fileID: 0}

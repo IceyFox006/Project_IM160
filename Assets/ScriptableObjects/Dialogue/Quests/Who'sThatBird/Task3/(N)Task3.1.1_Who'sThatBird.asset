@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: (N)Task3.1.1_Who'sThatBird
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: I don't think nuthatches are that bright though...
+    _characterRelations:
+    - _character: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+      _relationshipChangeValue: -1
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: I'm stuck between a goldfinch and a cardinal!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: I think I'll go with cardinal...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 8
+    _text: LOOK!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: You missed the pewpewpew bird!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: They were bright red! So they must've been a cardinal!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Do you want to know a super duper cool secret about cardinals?
+    _characterRelations: []
+    _responses:
+    - _text: Yes.
+      _dialogueBranch: {fileID: 11400000, guid: e1923eb90913e374eb367c43e6479c27, type: 2}
+    - _text: No.
+      _dialogueBranch: {fileID: 11400000, guid: 35b60811773126a489b126d97568b152, type: 2}
+  _activeQuest: {fileID: 0}

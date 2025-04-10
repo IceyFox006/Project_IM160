@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c33124512fe8846acba605f9eb1918, type: 3}
+  m_Name: Acorn
+  m_EditorClassIdentifier: 
+  _name: Acorn
+  _iconSprite: {fileID: 21300000, guid: 90569c356cf042844a8007cbd59be66e, type: 3}
+  _overworldPrefab: {fileID: 2765507419675127797, guid: 21f47875a09bfaf45abd165dce5992ea, type: 3}
+  _holdOffset: {x: 0, y: 0, z: 0}

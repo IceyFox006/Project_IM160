@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: Task3.0_Who'sThatBird
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 8
+    _text: Wow! This one sounds so cool!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: They go "PEW PEW PEW PEW PEW!"
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: Like a laser gun!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: They've gotta be really bright to match how they sing! I wonder who they
+      are?
+    _characterRelations: []
+    _responses:
+    - _text: Nuthatch
+      _dialogueBranch: {fileID: 11400000, guid: 5155e6b93b924d04f8bd71e01222984d, type: 2}
+    - _text: Goldfinch
+      _dialogueBranch: {fileID: 11400000, guid: 91a596bfe3aaa7d49b97d83fd033ea0e, type: 2}
+    - _text: Cardinal
+      _dialogueBranch: {fileID: 11400000, guid: 6a1e5301f101eeb4da5286b6a7b8b23a, type: 2}
+  _activeQuest: {fileID: 0}

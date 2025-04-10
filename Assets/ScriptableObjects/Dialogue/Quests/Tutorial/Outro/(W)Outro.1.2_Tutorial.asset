@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: (W)Outro.1.2_Tutorial
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: Didn't I already show you my house...?
+    _characterRelations:
+    - _character: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+      _relationshipChangeValue: 1
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 3
+    _text: Huh. Maybe I showed one of my other friends and thought I already showed
+      you.
+    _characterRelations: []
+    _responses: []
+  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Sorry about the confusion.
+    _characterRelations: []
+    _responses:
+    - _text: House?
+      _dialogueBranch: {fileID: 11400000, guid: 375e05998341c95458b25263231c3820, type: 2}
+    - _text: Friends?
+      _dialogueBranch: {fileID: 11400000, guid: 4ff5c22813174f9458266743ecc6e9cf, type: 2}
+  _activeQuest: {fileID: 0}
