@@ -10,6 +10,7 @@ using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
 {
+    [Header("Sound")]
     [SerializeField] private AudioMixer _audioMixer;
     [SerializeField] private Slider _masterAudioSlider;
     [SerializeField] private Slider _ambientVolumeSlider;
@@ -17,9 +18,18 @@ public class Settings : MonoBehaviour
 
     public void Start()
     {
+        SetSettings();
+
         _masterAudioSlider.value = StaticData.VolumeMaster;
-        _masterAudioSlider.value = StaticData.VolumeAmbient;
-        _masterAudioSlider.value = StaticData.VolumeSFX;
+        _ambientVolumeSlider.value = StaticData.VolumeAmbient;
+        _SFXVolumeSlider.value = StaticData.VolumeSFX;
+    }
+
+    public void SetSettings()
+    {
+        _audioMixer.SetFloat("Master", Mathf.Log10(StaticData.VolumeMaster) * 20);
+        _audioMixer.SetFloat("Ambient", Mathf.Log10(StaticData.VolumeAmbient) * 20);
+        _audioMixer.SetFloat("SFX", Mathf.Log10(StaticData.VolumeSFX) * 20);
     }
 
     /// <summary>
@@ -52,6 +62,7 @@ public class Settings : MonoBehaviour
                 break;
         }
     }
+
     public void Back()
     {
         transform.GetChild(0).gameObject.SetActive(false);
