@@ -33,6 +33,7 @@ public class DialogueManager : MonoBehaviour
     private DialogueLine currentLine;
 
     public GameObject DialogueUI { get => _dialogueUI; set => _dialogueUI = value; }
+    public float TypeSpeed { get => _typeSpeed; set => _typeSpeed = value; }
 
     private void Start()
     {
@@ -124,15 +125,15 @@ public class DialogueManager : MonoBehaviour
             }
         }
         StopAllCoroutines();
-        StartCoroutine(TypeText(currentLine.Text));
+        StartCoroutine(TypeDialogueText(currentLine.Text));
     }
 
     /// <summary>
-    /// Types text out over a period of time.
+    /// Types dialogue text out over a period of time.
     /// </summary>
     /// <param name="text"></param>
     /// <returns></returns>
-    IEnumerator TypeText(string text)
+    IEnumerator TypeDialogueText(string text)
     {
         _dialogueText.text = "";
         foreach (char letter in  text.ToCharArray())
@@ -142,6 +143,22 @@ public class DialogueManager : MonoBehaviour
         }
         AtEndOfTypeText();
     }
+
+    /// <summary>
+    /// Types dialogue text out over a period of time.
+    /// </summary>
+    /// <param name="text"></param>
+    /// <returns></returns>
+    public IEnumerator TypeText(TMP_Text TMPText, string text)
+    {
+        TMPText.text = "";
+        foreach (char letter in text.ToCharArray())
+        {
+            TMPText.text += letter;
+            yield return new WaitForSeconds(_typeSpeed);
+        }
+    }
+
     /// <summary>
     /// Allows player to continue dialogue or respond.
     /// </summary>
@@ -203,7 +220,7 @@ public class DialogueManager : MonoBehaviour
         {
             GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("ENABLE");
             LevelManager.Instance.CurrentLevel++;
-            StartCoroutine(LevelManager.Instance.LoadLevel(1));
+            LevelManager.Instance.LoadLevel();
         }
     }
 
@@ -237,7 +254,7 @@ public class DialogueManager : MonoBehaviour
             case Enums.EffectFlag.JumpToLevel1:
                 LevelManager.Instance.CurrentLevel = 1;
                 LevelManager.Instance.ResetLevel(LevelManager.Instance.Levels[1]);
-                LevelManager.Instance.InstantLoadLevel();
+                LevelManager.Instance.LoadLevel(true);
                 break;
             case Enums.EffectFlag.ShowImage: _dialoguePicture.gameObject.SetActive(true); break;
             case Enums.EffectFlag.HideImage: _dialoguePicture.gameObject.SetActive(false); break;

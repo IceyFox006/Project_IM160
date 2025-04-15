@@ -5,6 +5,7 @@
  */
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -30,18 +31,37 @@ public class LevelManager : MonoBehaviour
     {
         instance = this;
         if (_currentLevel > -1 && _currentLevel < _levels.Count)
-            StartCoroutine(LoadLevel());
+            LoadLevel();
     }
 
+    /// <summary>
+    /// Loads a new level.
+    /// </summary>
+    /// <param name="isInstant"></param>
+    public void LoadLevel(bool isInstant = true)
+    {
+        if (isInstant)
+            InstantLoadLevel();
+        else
+            WaitLoadLevel();
+
+        StartCoroutine(GameManager.Instance.DialogueManager.TypeText(GameManager.Instance.LoadLevelScreen.GetComponentInChildren<TMP_Text>(), (_levels.Count - CurrentLevel).ToString() + " days left."));
+        GameManager.Instance.LoadLevelScreen.GetComponent<Animator>().Play("DISABLE");
+
+        StartCoroutine(PlayLevelIntroDialogue());
+    }
+    IEnumerator PlayLevelIntroDialogue()
+    {
+        yield return new WaitForSeconds(GameManager.Instance.LoadLevelScreen.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0).Length);
+        GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
+    }
     /// <summary>
     /// Enables/disables proper level boundaries and starts intro dialogue.
     /// </summary>
     /// <returns></returns>
-    public IEnumerator LoadLevel(float loadTime = 0)
+    public IEnumerator WaitLoadLevel()
     {
-        Debug.Log("Load0");
-        yield return new WaitForSeconds(loadTime);
-        Debug.Log("Load1");
+        yield return new WaitForSeconds(_loadTime);
         completedLevel = false;
         GameManager.Instance.PlayerAvatar.transform.position = Vector3.zero;
         for (int index = 0; index < _levels.Count; index++)
@@ -56,8 +76,7 @@ public class LevelManager : MonoBehaviour
         GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("DISABLE");
         GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE");
 
-        Debug.Log("Load2");
-        GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
+        
     }
     public void InstantLoadLevel()
     {
@@ -75,7 +94,7 @@ public class LevelManager : MonoBehaviour
         GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("DISABLE");
         GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE");
 
-        GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
+        //GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
     }
 
     /// <summary>
@@ -127,7 +146,6 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void ResetLevel(Level level)
     {
-        Debug.Log("Reset");
         ResetQuest(level.SideQuest);
         ResetCharacters(GameManager.Instance.Characters);
     }

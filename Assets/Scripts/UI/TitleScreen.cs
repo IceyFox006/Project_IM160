@@ -12,6 +12,11 @@ public class TitleScreen : MonoBehaviour
 {
     [SerializeField] private string _gameSceneName;
     [SerializeField] private Settings _settingsCanvas;
+
+    private void Start()
+    {
+        _settingsCanvas.SetSettings();
+    }
     public void StartGame()
     {
         SceneManager.LoadScene(_gameSceneName);
