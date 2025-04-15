@@ -27,6 +27,9 @@ public class DialogueManager : MonoBehaviour
     [Range(0, 1)] [SerializeField] private float _typeSpeed = 0.1f;
     [SerializeField] private Character _noSpeaker;
 
+    [Header("Extra")]
+    [SerializeField] private GameObject _dialoguePicture;
+
     private DialogueLine currentLine;
 
     public GameObject DialogueUI { get => _dialogueUI; set => _dialogueUI = value; }
@@ -56,10 +59,6 @@ public class DialogueManager : MonoBehaviour
         _speakerNameText.text = dialogue.DialogueLines[0].SpeakerCharacter.Name;
         _dialogueLines.Clear();
 
-        //for (int index = 0; index < dialogue.DialogueLines.Length; index++)
-        //{
-        //    _dialogueLines.Enqueue(dialogue.DialogueLines[index]);
-        //}
         AddDialogue(dialogue);
         DisplayNextLine();
     }
@@ -84,6 +83,8 @@ public class DialogueManager : MonoBehaviour
         currentLine = _dialogueLines.Dequeue();
         CheckDialogueRequirement();
 
+        ActivateEffectFlags(currentLine);
+
         _speakerNameText.transform.parent.gameObject.SetActive(true);
         _speakerNameText.text = currentLine.SpeakerCharacter.Name;
 
@@ -96,6 +97,7 @@ public class DialogueManager : MonoBehaviour
                 if (characterExpression.Expression == currentLine.CharacterExpression)
                 {
                     speakerExpressionSprite = characterExpression.Sprite;
+                    _speakerSprite.rectTransform.sizeDelta = characterExpression.Size;
                     break;
                 }
             }
@@ -186,12 +188,12 @@ public class DialogueManager : MonoBehaviour
     /// <summary>
     /// Ends a dialogue and hides the UI.
     /// </summary>
-    private void EndDialogue()
+    private void EndDialogue(bool forceEnd = false)
     {
         GameManager.Instance.LevelManager.CheckQuestProgress
             (GameManager.Instance.LevelManager.Levels[GameManager.Instance.LevelManager.CurrentLevel].SideQuest);
         
-        if (_dialogueLines.Count > 0)
+        if (_dialogueLines.Count > 0 || forceEnd)
                 return;
 
         GameManager.Instance.InUI = false;
@@ -214,6 +216,31 @@ public class DialogueManager : MonoBehaviour
         for (int index = 0; index < dialogue.DialogueLines.Length; index++)
         {
             _dialogueLines.Enqueue(dialogue.DialogueLines[index]);
+        }
+    }
+
+    /// <summary>
+    /// Activates a dialogue line's effect flag.
+    /// </summary>
+    /// <param name="dialogueLine"></param>
+    public void ActivateEffectFlags(DialogueLine dialogueLine)
+    {
+        if (dialogueLine.EffectFlag == Enums.EffectFlag.None)
+            return;
+
+        switch (dialogueLine.EffectFlag)
+        {
+            case Enums.EffectFlag.FadeToBlack:
+                GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("ENABLE"); break;
+            case Enums.EffectFlag.FadeFromBlack:
+                GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE"); break;
+            case Enums.EffectFlag.JumpToLevel1:
+                LevelManager.Instance.CurrentLevel = 1;
+                LevelManager.Instance.ResetLevel(LevelManager.Instance.Levels[1]);
+                LevelManager.Instance.InstantLoadLevel();
+                break;
+            case Enums.EffectFlag.ShowImage: _dialoguePicture.gameObject.SetActive(true); break;
+            case Enums.EffectFlag.HideImage: _dialoguePicture.gameObject.SetActive(false); break;
         }
     }
 }

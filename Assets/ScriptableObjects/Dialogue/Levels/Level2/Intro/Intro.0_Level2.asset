@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: Intro.0_Level2
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: I'm really happy you're back!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I was getting pretty nervous that you wouldn't come back, but I guess
+      I didn't need to worry.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: But I still do sometimes. Everyone leaves eventually.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: Sometimes I think there' something wrong with me.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: There's nothing stopping mom and my friends from talking to me, but they
+      avoid me anyway.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: Atleast I get to see them sometimes though, I haven't seen ma in a really
+      really long time.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: ...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: I miss her.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
+      _inequalityCheck: 1
+      _score: 2
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Anyways, I keep hearing strange sounds that weren't hear before.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
+      _inequalityCheck: 1
+      _score: 2
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: One of them goes "VROOOOM" and another one goes "BEEP BEEP!"
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
+      _inequalityCheck: 1
+      _score: 2
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 2
+    _text: If it keeps going, I won't be able to hear the birds!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
+      _inequalityCheck: 1
+      _score: 2
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: It will probably go away soon though.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
+      _inequalityCheck: 1
+      _score: 2
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: Stuff like this always happens when on of my new friends comes to The
+      Woods and it goes away eventually.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
+      _inequalityCheck: 1
+      _score: 2
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Normally when they stop talking to me.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
+      _inequalityCheck: 1
+      _score: 4
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Anyways, there's alot more bugs today. I hope they won't scare you.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
+      _inequalityCheck: 1
+      _score: 4
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: All my other friends just pretend they don't see them.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
+      _inequalityCheck: 1
+      _score: 4
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: It must've worked really good for them because they are never scared of
+      the bugs.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
+      _inequalityCheck: 1
+      _score: 4
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: I wished it worked when I tried that...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
+      _inequalityCheck: 1
+      _score: 4
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: My friends even moved to The Woods desprite the bugs, so maybe you will
+      too!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: You won't leave me, right?
+    _characterRelations: []
+    _responses:
+    - _text: Yes.
+      _dialogueBranch: {fileID: 11400000, guid: 3366fd671aff10f458e0afa61369a276, type: 2}
+    - _text: Depends.
+      _dialogueBranch: {fileID: 11400000, guid: d82d6a6a0225d7249a5bdc2115280030, type: 2}
+    - _text: No.
+      _dialogueBranch: {fileID: 11400000, guid: fed13454e665f584583e63217a70ff09, type: 2}
+  _activeQuest: {fileID: 0}

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: (SI)Intro.2.2_Level0
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: b5772446c14bfb840b5c0f083aa5868b, type: 2}
+    _characterExpression: 0
+    _text: Hey! Are you going back to sl-
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: ...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: You went back to sleep.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 3
+    _speakerCharacter: {fileID: 11400000, guid: 5925d862c740c204b8cbcb8c9805d897, type: 2}
+    _characterExpression: 0
+    _text: 
+    _characterRelations: []
+    _responses: []
+  _activeQuest: {fileID: 0}

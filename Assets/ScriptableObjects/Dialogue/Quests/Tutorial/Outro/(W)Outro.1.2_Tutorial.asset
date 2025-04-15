@@ -13,20 +13,30 @@ MonoBehaviour:
   m_Name: (W)Outro.1.2_Tutorial
   m_EditorClassIdentifier: 
   _dialogueLines:
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 3
     _text: Didn't I already show you my house...?
-    _characterRelations:
-    - _character: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-      _relationshipChangeValue: 1
+    _characterRelations: []
     _responses: []
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 3
     _text: Huh. Maybe I showed one of my other friends and thought I already showed
       you.
     _characterRelations: []
     _responses: []
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 6
     _text: Sorry about the confusion.
     _characterRelations: []

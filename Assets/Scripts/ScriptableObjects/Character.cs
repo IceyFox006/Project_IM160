@@ -45,9 +45,11 @@ public class CharacterExpression
 {
     [SerializeField] private Enums.CharacterExpression _expression = Enums.CharacterExpression.Default;
     [SerializeField] private Sprite _sprite;
+    [SerializeField] private Vector2 _size = new Vector2(500, 500);
 
     public Enums.CharacterExpression Expression { get => _expression; set => _expression = value; }
     public Sprite Sprite { get => _sprite; set => _sprite = value; }
+    public Vector2 Size { get => _size; set => _size = value; }
 }
 
 /// <summary>

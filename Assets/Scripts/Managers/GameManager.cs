@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PauseMenu _pauseMenu;
     [SerializeField] private HelpMenu _helpMenu;
     [SerializeField] private GameObject _blackScreen;
+    [SerializeField] private GameObject _dialogueBlackScreen;
 
     [Header("Inventory")]
     [SerializeField] private InventoryManager _inventoryManager;
@@ -63,6 +64,7 @@ public class GameManager : MonoBehaviour
     public bool InUI { get => inUI; set => inUI = value; }
     public AudioManager AudioManager { get => _audioManager; set => _audioManager = value; }
     public Character[] Characters { get => _characters; set => _characters = value; }
+    public GameObject DialogueBlackScreen { get => _dialogueBlackScreen; set => _dialogueBlackScreen = value; }
 
     private void Start()
     {

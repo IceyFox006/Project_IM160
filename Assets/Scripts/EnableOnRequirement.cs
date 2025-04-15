@@ -9,13 +9,9 @@ using UnityEngine;
 
 public class EnableOnRequirement : MonoBehaviour
 {
+    [SerializeField] private Enums.Inequalities _levelInequalityCheck;
     [SerializeField] private int _levelRequirement = -1;
     [SerializeField] private CharacterRequirement[] _characterRequirements;
-
-    private void Start()
-    {
-        
-    }
 
     /// <summary>
     /// Returns true if all requirements are met.
@@ -23,8 +19,32 @@ public class EnableOnRequirement : MonoBehaviour
     /// <returns></returns>
     public bool MeetsRequirements()
     {
-        if (_levelRequirement > -1 && _levelRequirement != LevelManager.Instance.CurrentLevel)
-            return false;
+        //if (_levelRequirement > -1 && _levelRequirement != LevelManager.Instance.CurrentLevel)
+        //    return false;
+
+        //Checks level requirement
+        if (_levelRequirement > -1)
+        {
+            switch (_levelInequalityCheck)
+            {
+                case Enums.Inequalities.None:
+                    break;
+                case Enums.Inequalities.LessThan:
+                    if (_levelRequirement >= LevelManager.Instance.CurrentLevel)
+                        return false;
+                    break;
+                case Enums.Inequalities.GreaterThan:
+                    if (_levelRequirement <= LevelManager.Instance.CurrentLevel)
+                        return false;
+                    break;
+                case Enums.Inequalities.Equal:
+                    if (_levelRequirement != LevelManager.Instance.CurrentLevel)
+                        return false;
+                    break;
+            }
+        }
+
+        //Checks character relationship score requirement.
         foreach (CharacterRequirement requirement in  _characterRequirements)
         {
             if (!requirement.MeetsRequirement())

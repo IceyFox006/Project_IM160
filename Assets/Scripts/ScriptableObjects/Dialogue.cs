@@ -29,6 +29,7 @@ public class Dialogue : ScriptableObject
 public class DialogueLine
 {
     [SerializeField] private CharacterRequirement _requirement;
+    [SerializeField] private Enums.EffectFlag _effectFlag = Enums.EffectFlag.None;
     [SerializeField] private Character _speakerCharacter;
     [SerializeField] private Enums.CharacterExpression _characterExpression;
     [TextArea(3, 10)] [SerializeField] private string _text;
@@ -40,6 +41,7 @@ public class DialogueLine
     public Character SpeakerCharacter { get => _speakerCharacter; set => _speakerCharacter = value; }
     public Enums.CharacterExpression CharacterExpression { get => _characterExpression; set => _characterExpression = value; }
     public CharacterRequirement Requirement { get => _requirement; set => _requirement = value; }
+    public Enums.EffectFlag EffectFlag { get => _effectFlag; set => _effectFlag = value; }
 }
 
 /// <summary>

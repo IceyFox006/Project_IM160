@@ -15,4 +15,4 @@ MonoBehaviour:
   _completetionScore: 6
   _introDialogue: {fileID: 11400000, guid: f33759ce4615db84ca5fc915357374f8, type: 2}
   _outroDialogue: {fileID: 11400000, guid: 1b6aa52e2f0ee9248b67089dc46e0d33, type: 2}
-  _sideQuest: {fileID: 11400000, guid: 7c5b5438ada10d341b804723ccc09bde, type: 2}
+  _sideQuest: {fileID: 11400000, guid: fb4d5da79dc83f7469af986f780570de, type: 2}

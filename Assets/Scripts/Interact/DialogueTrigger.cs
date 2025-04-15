@@ -13,6 +13,11 @@ public class DialogueTrigger : MonoBehaviour
 
     public Dialogue Dialogue { get => _dialogue; set => _dialogue = value; }
 
+
+    public void OnMouseDown()
+    {
+        TriggerDialogue();
+    }
     /// <summary>
     /// Starts a dialogue.
     /// </summary>

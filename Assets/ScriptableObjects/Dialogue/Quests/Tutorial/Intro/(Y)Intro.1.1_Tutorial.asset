@@ -13,20 +13,35 @@ MonoBehaviour:
   m_Name: (Y)Intro.1.1_Tutorial
   m_EditorClassIdentifier: 
   _dialogueLines:
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 5
     _text: I'm so glad you like it too!
     _characterRelations:
     - _character: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
       _relationshipChangeValue: 1
     _responses: []
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 5
-    _text: Alot of my old friends are scared of The Woods for some reason, but I
-      think it's fun to explore it!
+    _text: Alot of my old friends are scared of The Woods and sometimes I am too,
+      but I still think it's fun to explore it!
     _characterRelations: []
     _responses: []
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 4
     _text: It's no fun standing around though! Let's run around!
     _characterRelations: []

@@ -47,5 +47,13 @@ public static class Enums
         LessThan,
         Equal,
     }
-
+    public enum EffectFlag
+    {
+        None,
+        FadeToBlack,
+        FadeFromBlack,
+        JumpToLevel1,
+        ShowImage,
+        HideImage,
+    }
 }
