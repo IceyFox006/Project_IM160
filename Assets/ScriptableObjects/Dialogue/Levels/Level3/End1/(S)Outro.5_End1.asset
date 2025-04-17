@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
+  m_Name: (S)Outro.5_End1
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I've just given up.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I never really feel like me.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: The squirrels are all my friends, but they never talk to me.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: I feel like I could talk to them a long time ago, but they just stopped.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: Maybe I can't understand them anymore.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: Or maybe I never could.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: My memories are kinda funky too.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Like someone took a bunch of ones from different people and mixed them
+      together.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: But they still feel like mine.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I just...
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 2
+    _text: I don't know what to do!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 7
+    _text: But I remember when I get sad, my ma got sad too.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I can't cry or be sad 'cause that makes others sad.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: So I'm happy!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: I'm going to miss you, but we'll see eachother again.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: And maybe next time, we can go to my house and we'll have a playdate!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 5
+    _text: We can draw and snack on mushrooms and listen to the birds!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: It would be alot more fun if we haven't seen eachother for a while though.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _inequalityCheck: 3
+      _score: 21
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: Then we can do it when we meet again and we'll both be very happy!
+    _characterRelations: []
+    _responses:
+    - _text: '*Leave*'
+      _dialogueBranch: {fileID: 11400000, guid: b65be109acda317428469f61f75f8956, type: 2}
+  _activeQuest: {fileID: 0}

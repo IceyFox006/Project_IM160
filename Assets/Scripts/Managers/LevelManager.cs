@@ -39,9 +39,7 @@ public class LevelManager : MonoBehaviour
     /// <returns></returns>
     public IEnumerator LoadLevel(float loadTime = 0)
     {
-        Debug.Log("Load0");
         yield return new WaitForSeconds(loadTime);
-        Debug.Log("Load1");
         completedLevel = false;
         GameManager.Instance.PlayerAvatar.transform.position = Vector3.zero;
         for (int index = 0; index < _levels.Count; index++)
@@ -56,7 +54,6 @@ public class LevelManager : MonoBehaviour
         GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("DISABLE");
         GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE");
 
-        Debug.Log("Load2");
         GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
     }
     public void InstantLoadLevel()
@@ -127,7 +124,6 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void ResetLevel(Level level)
     {
-        Debug.Log("Reset");
         ResetQuest(level.SideQuest);
         ResetCharacters(GameManager.Instance.Characters);
     }

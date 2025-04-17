@@ -10,6 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -31,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject _dialoguePicture;
 
     private DialogueLine currentLine;
+
 
     public GameObject DialogueUI { get => _dialogueUI; set => _dialogueUI = value; }
 
@@ -230,17 +232,26 @@ public class DialogueManager : MonoBehaviour
 
         switch (dialogueLine.EffectFlag)
         {
-            case Enums.EffectFlag.FadeToBlack:
+            case Enums.EffectFlag.FadeToBlack: //Screen fades to black.
                 GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("ENABLE"); break;
-            case Enums.EffectFlag.FadeFromBlack:
+            case Enums.EffectFlag.FadeFromBlack: //Screen fades from black.
                 GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE"); break;
-            case Enums.EffectFlag.JumpToLevel1:
+            case Enums.EffectFlag.JumpToLevel1: //Goes to level 1.
                 LevelManager.Instance.CurrentLevel = 1;
                 LevelManager.Instance.ResetLevel(LevelManager.Instance.Levels[1]);
                 LevelManager.Instance.InstantLoadLevel();
                 break;
-            case Enums.EffectFlag.ShowImage: _dialoguePicture.gameObject.SetActive(true); break;
-            case Enums.EffectFlag.HideImage: _dialoguePicture.gameObject.SetActive(false); break;
+            case Enums.EffectFlag.ShowImage: //Shows a dialogue image.
+                _dialoguePicture.gameObject.SetActive(true); break;
+            case Enums.EffectFlag.HideImage: //Hides a dialogue image.
+                _dialoguePicture.gameObject.SetActive(false); break;
+            case Enums.EffectFlag.PlayCredits://Goes to credits scene.
+                foreach (Level level in LevelManager.Instance.Levels)
+                {
+                    LevelManager.Instance.ResetLevel(level);
+                }
+                SceneManager.LoadScene("Credits");
+                break;
         }
     }
 }

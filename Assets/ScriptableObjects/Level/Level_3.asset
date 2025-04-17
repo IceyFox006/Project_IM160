@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700004067b917e147831891c9cd105c1, type: 3}
   m_Name: Level_3
   m_EditorClassIdentifier: 
-  _completetionScore: 6
+  _completetionScore: 1
   _introDialogue: {fileID: 11400000, guid: f33759ce4615db84ca5fc915357374f8, type: 2}
-  _outroDialogue: {fileID: 11400000, guid: 1b6aa52e2f0ee9248b67089dc46e0d33, type: 2}
+  _outroDialogue: {fileID: 11400000, guid: 2be6b8557c33ffd4faff376533a2ef94, type: 2}
   _sideQuest: {fileID: 11400000, guid: fb4d5da79dc83f7469af986f780570de, type: 2}

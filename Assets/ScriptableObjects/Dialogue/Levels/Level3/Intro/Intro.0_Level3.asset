@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c3ee2864ffc4be4885e18210bf4d5ce, type: 3}
-  m_Name: Outro.0_Level2
+  m_Name: Intro.0_Level3
   m_EditorClassIdentifier: 
   _dialogueLines:
   - _requirement:
@@ -19,98 +19,49 @@ MonoBehaviour:
       _score: 0
     _effectFlag: 0
     _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: Good morning!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: The sun is rising and it's a really good day!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
+      _inequalityCheck: 1
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 4
+    _text: I think the fog is clear enough for you to come to my house!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
+      _inequalityCheck: 1
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 2
+    _text: It took its sweet time on it too!
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
+      _inequalityCheck: 1
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 5
-    _text: Phew! That was alot of walking! It's like The Woods is getting bigger
-      each day!
-    _characterRelations: []
-    _responses: []
-  - _requirement:
-      _character: {fileID: 0}
-      _inequalityCheck: 0
-      _score: 0
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 6
-    _text: I think it's just the fog going away though.
-    _characterRelations: []
-    _responses: []
-  - _requirement:
-      _character: {fileID: 0}
-      _inequalityCheck: 0
-      _score: 0
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 4
-    _text: Which is really good! I don't like going into the fog, so thanks for not
-      going in it!
-    _characterRelations: []
-    _responses: []
-  - _requirement:
-      _character: {fileID: 0}
-      _inequalityCheck: 0
-      _score: 0
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 6
-    _text: When I go in there, I feel really lonely. I can't see anyone, so they
-      probably aren't there.
-    _characterRelations: []
-    _responses: []
-  - _requirement:
-      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
-      _inequalityCheck: 1
-      _score: 3
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 6
-    _text: But I also hear a bunch of weird noises all at the same time like they're
-      all shouting over eachother.
-    _characterRelations:
-    - _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
-      _relationshipChangeValue: 1
-    _responses: []
-  - _requirement:
-      _character: {fileID: 11400000, guid: e197bd5037e4703458e019d85b3914ab, type: 2}
-      _inequalityCheck: 1
-      _score: 3
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 6
-    _text: It gives me really bad headaches.
-    _characterRelations: []
-    _responses: []
-  - _requirement:
-      _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
-      _inequalityCheck: 1
-      _score: 8
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 6
-    _text: But I also feel like stuff is crawling all over my skin and getting stuck
-      there.
-    _characterRelations:
-    - _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
-      _relationshipChangeValue: 1
-    _responses: []
-  - _requirement:
-      _character: {fileID: 11400000, guid: cdc5d5dba24035345a9ac84f9e27665d, type: 2}
-      _inequalityCheck: 1
-      _score: 8
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 3
-    _text: I guess I always feel like that though. I just feel it alot more when
-      I'm in the fog.
-    _characterRelations: []
-    _responses: []
-  - _requirement:
-      _character: {fileID: 0}
-      _inequalityCheck: 0
-      _score: 0
-    _effectFlag: 0
-    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 3
-    _text: What was I talking about?
+    _text: There's no point to keep talking about that though. It doesn't really
+      matter anyways.
     _characterRelations: []
     _responses: []
   - _requirement:
@@ -119,8 +70,9 @@ MonoBehaviour:
       _score: 0
     _effectFlag: 0
     _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 4
-    _text: Oh right!
+    _characterExpression: 5
+    _text: My house is at the edge of The Woods, so it's a bit of a walk, but I would
+      love to have a playdate!
     _characterRelations: []
     _responses: []
   - _requirement:
@@ -129,19 +81,53 @@ MonoBehaviour:
       _score: 0
     _effectFlag: 0
     _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I mean, only if you want to though.
+    _characterRelations: []
+    _responses:
+    - _text: Yes.
+      _dialogueBranch: {fileID: 11400000, guid: 4e3d6d04812805440a959455d65b0f4f, type: 2}
+    - _text: No.
+      _dialogueBranch: {fileID: 11400000, guid: 5c4c0f4286bec184788134bf47daa0bf, type: 2}
+  - _requirement:
+      _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
+      _inequalityCheck: 2
+      _score: 1
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 4
-    _text: Since the fog is going away, I might be able to show you my house soon!
+    _text: We're gonna feed my friends again today. This is probably gonna be the
+      last time though.
     _characterRelations: []
     _responses: []
   - _requirement:
-      _character: {fileID: 0}
-      _inequalityCheck: 0
-      _score: 0
+      _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
+      _inequalityCheck: 2
+      _score: 1
     _effectFlag: 0
     _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 6
-    _text: Anyways, it's about time to go home. I'm really tired and my legs hurt
-      a bit. I'll see you tomorrow.
+    _text: I mean, always stay in The Woods with me if you want.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
+      _inequalityCheck: 2
+      _score: 1
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: Some of my friends chose to, but more friends would always be great.
+    _characterRelations: []
+    _responses: []
+  - _requirement:
+      _character: {fileID: 11400000, guid: afd099fc5e3a7cc48a42896262564005, type: 2}
+      _inequalityCheck: 2
+      _score: 1
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+    _characterExpression: 6
+    _text: I don't wanna think about that right now though.
     _characterRelations: []
     _responses: []
   _activeQuest: {fileID: 0}

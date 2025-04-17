@@ -55,5 +55,6 @@ public static class Enums
         JumpToLevel1,
         ShowImage,
         HideImage,
+        PlayCredits,
     }
 }
