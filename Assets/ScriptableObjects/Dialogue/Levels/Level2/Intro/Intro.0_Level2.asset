@@ -17,7 +17,7 @@ MonoBehaviour:
       _character: {fileID: 0}
       _inequalityCheck: 0
       _score: 0
-    _effectFlag: 0
+    _effectFlag: 2
     _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 4
     _text: I'm really happy you're back!

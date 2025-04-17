@@ -5,12 +5,14 @@
  */
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
     private static LevelManager instance;
 
+    [SerializeField] private GameObject _levelLoadScreen;
     [SerializeField] private float _loadTime;
     [SerializeField] private List<Level> _levels = new List<Level>();
     [SerializeField] private List<GameObject> _levelBoundaries = new List<GameObject>();
@@ -30,32 +32,45 @@ public class LevelManager : MonoBehaviour
     {
         instance = this;
         if (_currentLevel > -1 && _currentLevel < _levels.Count)
-            StartCoroutine(LoadLevel());
+            LoadLevel();
+    }
+
+    public void LoadLevel()
+    {
+        //_levelLoadScreen.GetComponent<Animator>().Play("DISABLE");
+        //StartCoroutine(GameManager.Instance.DialogueManager.TypeText(_levelLoadScreen.GetComponentInChildren<TMP_Text>(), (_levels.Count - CurrentLevel).ToString() + " days left."));
+        InstantLoadLevel();
+        StartCoroutine(PlayIntroDialogue());
+    }
+    IEnumerator PlayIntroDialogue()
+    {
+        yield return new WaitForSeconds(_levelLoadScreen.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0).Length);
+        GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
     }
     //
     /// <summary>
     /// Enables/disables proper level boundaries and starts intro dialogue.
     /// </summary>
     /// <returns></returns>
-    public IEnumerator LoadLevel(float loadTime = 0)
-    {
-        yield return new WaitForSeconds(loadTime);
-        completedLevel = false;
-        GameManager.Instance.PlayerAvatar.transform.position = Vector3.zero;
-        for (int index = 0; index < _levels.Count; index++)
-        {
-            if (index <= CurrentLevel)
-                _levelBoundaries[index].SetActive(false);
-            else
-                _levelBoundaries[index].SetActive(true);
-        }
-        EnableOnRequirement.SetActiveOnRequirement();
+    //public IEnumerator LoadLevel(float loadTime = 0)
+    //{
+    //    yield return new WaitForSeconds(loadTime);
+    //    completedLevel = false;
+    //    GameManager.Instance.PlayerAvatar.transform.position = Vector3.zero;
+    //    for (int index = 0; index < _levels.Count; index++)
+    //    {
+    //        if (index <= CurrentLevel)
+    //            _levelBoundaries[index].SetActive(false);
+    //        else
+    //            _levelBoundaries[index].SetActive(true);
+    //    }
+    //    EnableOnRequirement.SetActiveOnRequirement();
 
-        GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("DISABLE");
-        GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE");
+    //    GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("DISABLE");
+    //    GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE");
 
-        GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
-    }
+    //    GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
+    //}
     public void InstantLoadLevel()
     {
         completedLevel = false;
@@ -69,10 +84,9 @@ public class LevelManager : MonoBehaviour
         }
         EnableOnRequirement.SetActiveOnRequirement();
 
-        GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("DISABLE");
-        GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("DISABLE");
+        GameManager.Instance.DialogueBlackScreen.GetComponent<Animator>().Play("IDLE");
 
-        GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
+        //GameManager.Instance.DialogueManager.StartDialogue(_levels[_currentLevel].IntroDialogue);
     }
 
     /// <summary>

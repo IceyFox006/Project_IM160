@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96e3032daabaa1042bc853446e604658, type: 3}
-  m_Name: SquirrelFeed
+  m_Name: AcornHold
   m_EditorClassIdentifier: 
   _description: 
   _prerequisites:
-  - {fileID: 11400000, guid: 2334532758154d245b401897c0780b3c, type: 2}
-  _dialogue: {fileID: 11400000, guid: 040af90f21854d14181dd98f4f8fbf7c, type: 2}
+  - {fileID: 11400000, guid: c9bfbc536b5602e4d95832492ed9e0c9, type: 2}
+  _dialogue: {fileID: 11400000, guid: 29a89d35e12931e468b18e48d8846c92, type: 2}
   _repeatDialogue: {fileID: 0}
   _deniedDialogue: {fileID: 0}
   _unactiveDialogue: {fileID: 0}

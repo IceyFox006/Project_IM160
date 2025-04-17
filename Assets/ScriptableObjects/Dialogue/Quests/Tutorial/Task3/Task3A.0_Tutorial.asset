@@ -13,24 +13,34 @@ MonoBehaviour:
   m_Name: Task3A.0_Tutorial
   m_EditorClassIdentifier: 
   _dialogueLines:
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 4
     _text: Shhh! I think I hear something!
     _characterRelations: []
     _responses: []
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 6
     _text: I think one of my friends is here. She's normally pretty hungry...
     _characterRelations: []
     _responses: []
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
+  - _requirement:
+      _character: {fileID: 0}
+      _inequalityCheck: 0
+      _score: 0
+    _effectFlag: 0
+    _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 5
     _text: We should give her the acorn! Grab it out of your bag.
-    _characterRelations: []
-    _responses: []
-  - _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
-    _characterExpression: 5
-    _text: Wait for her to come to you, she's pretty shy.
     _characterRelations: []
     _responses: []
   _activeQuest: {fileID: 0}

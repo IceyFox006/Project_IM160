@@ -166,7 +166,7 @@ MonoBehaviour:
     _characterRelations: []
     _responses:
     - _text: '*Stay*'
-      _dialogueBranch: {fileID: 11400000, guid: 13d40dba4112d48419533a6ec8d99fc4, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 9f709816e87de5d4d8656afb391d1c0a, type: 2}
     - _text: '*Leave*'
-      _dialogueBranch: {fileID: 11400000, guid: b65be109acda317428469f61f75f8956, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 7154d119be953cb4fa9bd87cbe6a9650, type: 2}
   _activeQuest: {fileID: 0}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogueLines:
   - _requirement:
-      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _inequalityCheck: 3
       _score: 1
     _effectFlag: 0
@@ -22,11 +22,11 @@ MonoBehaviour:
     _characterExpression: 7
     _text: You should really go.
     _characterRelations:
-    - _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+    - _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _relationshipChangeValue: 1
     _responses:
     - _text: '*Stay*'
-      _dialogueBranch: {fileID: 11400000, guid: 0feb4b8c11e4435478e106c143197779, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 0b640f98ea8b12c4b836a0874dee8e69, type: 2}
     - _text: '*Leave*'
-      _dialogueBranch: {fileID: 11400000, guid: b65be109acda317428469f61f75f8956, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 7154d119be953cb4fa9bd87cbe6a9650, type: 2}
   _activeQuest: {fileID: 0}

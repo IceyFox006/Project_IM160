@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private HUD _HUD;
     [SerializeField] private PauseMenu _pauseMenu;
     [SerializeField] private HelpMenu _helpMenu;
-    [SerializeField] private GameObject _blackScreen;
     [SerializeField] private GameObject _dialogueBlackScreen;
 
     [Header("Inventory")]
@@ -59,7 +58,6 @@ public class GameManager : MonoBehaviour
     public Material OverOutline { get => _overOutline; set => _overOutline = value; }
     public PauseMenu PauseMenu { get => _pauseMenu; set => _pauseMenu = value; }
     public HelpMenu HelpMenu { get => _helpMenu; set => _helpMenu = value; }
-    public GameObject BlackScreen { get => _blackScreen; set => _blackScreen = value; }
     public LevelManager LevelManager { get => _levelManager; set => _levelManager = value; }
     public bool InUI { get => inUI; set => inUI = value; }
     public AudioManager AudioManager { get => _audioManager; set => _audioManager = value; }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Level_3
   m_EditorClassIdentifier: 
   _completetionScore: 1
-  _introDialogue: {fileID: 11400000, guid: f33759ce4615db84ca5fc915357374f8, type: 2}
-  _outroDialogue: {fileID: 11400000, guid: 2be6b8557c33ffd4faff376533a2ef94, type: 2}
+  _introDialogue: {fileID: 11400000, guid: 152b64bb330005c40869bd87a5e18cdd, type: 2}
+  _outroDialogue: {fileID: 11400000, guid: a39afb05a1af27049aa8a2f291c2b15d, type: 2}
   _sideQuest: {fileID: 11400000, guid: fb4d5da79dc83f7469af986f780570de, type: 2}

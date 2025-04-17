@@ -17,7 +17,7 @@ MonoBehaviour:
       _character: {fileID: 0}
       _inequalityCheck: 0
       _score: 0
-    _effectFlag: 1
+    _effectFlag: 0
     _speakerCharacter: {fileID: 11400000, guid: b5772446c14bfb840b5c0f083aa5868b, type: 2}
     _characterExpression: 0
     _text: Wakey, wakey! It's time to get up!

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogueLines:
   - _requirement:
-      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _inequalityCheck: 2
       _score: 10
     _effectFlag: 0
@@ -22,27 +22,27 @@ MonoBehaviour:
     _characterExpression: 7
     _text: ...
     _characterRelations:
-    - _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+    - _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _relationshipChangeValue: 1
     _responses:
     - _text: '*Stay*'
       _dialogueBranch: {fileID: 11400000}
     - _text: '*Leave*'
-      _dialogueBranch: {fileID: 11400000, guid: b65be109acda317428469f61f75f8956, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 7154d119be953cb4fa9bd87cbe6a9650, type: 2}
   - _requirement:
-      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _inequalityCheck: 3
       _score: 10
     _effectFlag: 0
     _speakerCharacter: {fileID: 11400000, guid: cfb9f27ccd4f3f546bc4d850310e0fda, type: 2}
     _characterExpression: 2
-    _text: '"Why won''t you just LEAVE ME already?!"'
+    _text: Why won't you just LEAVE ME already?!"
     _characterRelations:
-    - _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+    - _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _relationshipChangeValue: 1
     _responses:
     - _text: '*Stay*'
-      _dialogueBranch: {fileID: 11400000, guid: bcab39d25b356d240b24ee9fcef835ed, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: d91524bdbe1c41c4b9cc0229f0e9f2ef, type: 2}
     - _text: '*Leave*'
-      _dialogueBranch: {fileID: 11400000, guid: b65be109acda317428469f61f75f8956, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 7154d119be953cb4fa9bd87cbe6a9650, type: 2}
   _activeQuest: {fileID: 0}

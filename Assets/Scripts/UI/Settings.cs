@@ -18,8 +18,8 @@ public class Settings : MonoBehaviour
     public void Start()
     {
         _masterAudioSlider.value = StaticData.VolumeMaster;
-        _masterAudioSlider.value = StaticData.VolumeAmbient;
-        _masterAudioSlider.value = StaticData.VolumeSFX;
+        _ambientVolumeSlider.value = StaticData.VolumeAmbient;
+        _SFXVolumeSlider.value = StaticData.VolumeSFX;
     }
 
     /// <summary>

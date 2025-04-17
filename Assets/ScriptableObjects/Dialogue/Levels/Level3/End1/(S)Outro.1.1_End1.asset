@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogueLines:
   - _requirement:
-      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _inequalityCheck: 3
       _score: 0
     _effectFlag: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
     _characterRelations: []
     _responses: []
   - _requirement:
-      _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+      _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _inequalityCheck: 3
       _score: 0
     _effectFlag: 0
@@ -32,11 +32,11 @@ MonoBehaviour:
     _characterExpression: 6
     _text: But you really should leave.
     _characterRelations:
-    - _character: {fileID: 11400000, guid: f15e9195f4719574c8a8d9d9363fcf12, type: 2}
+    - _character: {fileID: 11400000, guid: 2e502151811871649b9eb14402c76098, type: 2}
       _relationshipChangeValue: 1
     _responses:
     - _text: '*Stay*'
-      _dialogueBranch: {fileID: 11400000, guid: b5dd208b42f07c440a238f176af162bf, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 7e50f66505c6945438148c1155d645fa, type: 2}
     - _text: '*Leave*'
-      _dialogueBranch: {fileID: 11400000, guid: b65be109acda317428469f61f75f8956, type: 2}
+      _dialogueBranch: {fileID: 11400000, guid: 7154d119be953cb4fa9bd87cbe6a9650, type: 2}
   _activeQuest: {fileID: 0}

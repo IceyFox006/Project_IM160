@@ -15,6 +15,7 @@ MonoBehaviour:
   _description: 
   _prerequisites:
   - {fileID: 11400000, guid: 3aff1feb5df21b648a94293308c8edfa, type: 2}
-  _dialogue: {fileID: 11400000, guid: 003ff740e0da8e04b949078046be6faf, type: 2}
+  _dialogue: {fileID: 11400000, guid: 189e9376611a51b418d08f4629b23f8e, type: 2}
   _repeatDialogue: {fileID: 0}
+  _deniedDialogue: {fileID: 0}
   _unactiveDialogue: {fileID: 0}
