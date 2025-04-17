@@ -28,6 +28,8 @@ public class DialogueManager : MonoBehaviour
     [Range(0, 1)] [SerializeField] private float _typeSpeed = 0.1f;
     [SerializeField] private Character _noSpeaker;
 
+    private bool goingToNextLine = true;
+
     [Header("Extra")]
     [SerializeField] private GameObject _dialoguePicture;
 
@@ -39,7 +41,6 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         _dialogueLines = new Queue<DialogueLine>();
-        _continueButton.gameObject.SetActive(false);
         _responses.SetActive(false);
     }
 
@@ -62,17 +63,31 @@ public class DialogueManager : MonoBehaviour
         _dialogueLines.Clear();
 
         AddDialogue(dialogue);
-        DisplayNextLine();
+        Button_Continue();
     }
 
+    public void Button_Continue()
+    {
+        if (goingToNextLine)
+        {
+            DisplayNextLine();
+            goingToNextLine = false;
+        }
+        else
+        {
+            StopAllCoroutines();
+            _dialogueText.text = currentLine.Text;
+            AtEndOfTypeText();
+        }
+    }
     /// <summary>
     /// Displays the next line of text.
     /// </summary>
     public void DisplayNextLine()
     {
         //Resets relationship point animations and deactives continue button and responses.
+        _continueButton.gameObject.SetActive(true);
         _relationshipPointAnimator.Play("IDLE");
-        _continueButton.gameObject.SetActive(false);
         _responses.SetActive(false);
 
         //Check if there are more lines.
@@ -166,10 +181,10 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     private void AtEndOfTypeText()
     {
-        if (currentLine.Responses.Length <= 0) //If player can't respond
-            _continueButton.gameObject.SetActive(true);
-        else
+        goingToNextLine = true;
+        if (currentLine.Responses.Length > 0) //If player can respond
         {
+            _continueButton.gameObject.SetActive(false);
             foreach (Transform child in _responses.transform) //Destroys all old responses.
             {
                 GameObject.Destroy(child.gameObject);
