@@ -17,4 +17,4 @@ MonoBehaviour:
   _characterExpressions:
   - _expression: 0
     _sprite: {fileID: 21300000, guid: 3344caed11ddeaa4ba97f8931341d89a, type: 3}
-    _size: {x: 2750, y: 1500}
+    _size: {x: 1, y: 1}

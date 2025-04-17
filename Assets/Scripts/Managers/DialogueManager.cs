@@ -220,7 +220,6 @@ public class DialogueManager : MonoBehaviour
         _gameManager.HUD.EnableHUD();
         if (LevelManager.Instance.CompletedLevel)
         {
-            //GameManager.Instance.BlackScreen.GetComponent<Animator>().Play("ENABLE");
             LevelManager.Instance.CurrentLevel++;
             LevelManager.Instance.LoadLevel();
             //StartCoroutine(LevelManager.Instance.LoadLevel(1));
