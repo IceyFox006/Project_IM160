@@ -32,7 +32,7 @@ public class LevelManager : MonoBehaviour
         if (_currentLevel > -1 && _currentLevel < _levels.Count)
             StartCoroutine(LoadLevel());
     }
-
+    //
     /// <summary>
     /// Enables/disables proper level boundaries and starts intro dialogue.
     /// </summary>
